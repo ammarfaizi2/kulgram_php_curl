@@ -1,6 +1,6 @@
 <?php
-// instansiasi curl/memulai sesi curl
-$ch = curl_init("http://yessrilanka.com/kulgram/tujuan.php");
+// memulai sesi curl
+$ch = curl_init("http://localhost/curl/tujuan.php");
 
 // mengatur curl
 curl_setopt_array($ch,array(
