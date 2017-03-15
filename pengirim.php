@@ -1,6 +1,6 @@
 <?php
 // memulai sesi curl
-$ch = curl_init("http://localhost/curl/tujuan.php");
+$ch = curl_init("http://localhostz/curl/tujuan.php");
 
 // mengatur curl
 curl_setopt_array($ch,array(
@@ -11,7 +11,7 @@ curl_setopt_array($ch,array(
 $out = curl_exec($ch);
 
 // tampilkan pesan error jika terjadi error
-$err = curl_errno($ch) and print $err;
+$err = curl_error($ch) and print $err;
 
 // menutup curl
 curl_close($ch);
