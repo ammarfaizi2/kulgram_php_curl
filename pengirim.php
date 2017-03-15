@@ -3,9 +3,9 @@
 $ch = curl_init("http://localhostz/curl/tujuan.php");
 
 // mengatur curl
-curl_setopt_array($ch,array(
-		CURLOPT_RETURNTRANSFER=>true
-	));	
+curl_setopt_array($ch, array(
+        CURLOPT_RETURNTRANSFER=>true
+    ));
 
 // menjalankan curl
 $out = curl_exec($ch);
