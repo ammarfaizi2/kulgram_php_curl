@@ -1,6 +1,6 @@
 <?php
 // memulai sesi curl
-$ch = curl_init("http://localhostz/curl/tujuan.php");
+$ch = curl_init("http://localhost/curl/tujuan.php");
 
 // mengatur curl
 curl_setopt_array($ch, array(
