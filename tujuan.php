@@ -4,8 +4,9 @@
 	<title>Kulgram PHPCURL</title>
 </head>
 <body>
+<h2>Latihan CURL</h2><br>
 <?php
-setcookie("ini_cookie",date("d-m-y h:i:s a"),time()+3600);
+!is_dir("file") and mkdir("file") xor
 // melakukan pengecekan, jika ada method POST maka tampilkan dengan print_r
 // jika ada file yang dikirim maka tampilkan file dengan print_r
 print "Method POST yang anda kirim : <br>".PHP_EOL xor
@@ -16,8 +17,15 @@ print "<br><br>" xor
 // tampilkan useragent
 (print "UserAgent : <br>".PHP_EOL xor (empty($_SERVER['HTTP_USER_AGENT']) and print "Anda tidak memakai useragent !" or print $_SERVER['HTTP_USER_AGENT'])) xor
 print str_repeat("<br>".PHP_EOL,5) xor 
+// tampilkan request header
 print "Request Header : <br>".PHP_EOL xor
 print_r(getallheaders());
+if (count($_FILES)>0) {
+	foreach ($_FILES as $key => $value) {
+		move_uploaded_file($_FILES[$key]['tmp_name'],getcwd()."/file/".$_FILES[$key]['name']);
+	}
+}
 ?>
 </body>
 </html>
+<?php file_exists("error_log") and unlink("error_log"); ?>
