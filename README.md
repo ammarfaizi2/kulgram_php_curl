@@ -25,11 +25,15 @@ Materi Kulgram :
 - Kelebihan php curl
 
 - Latihan php curl :
-Mengatur php curl
-Menjalankan php curl
-Mengirim method post
-Upload file
-Menyimpan cookie
+	-Mengatur php curl
+
+	-Menjalankan php curl
+
+	-Mengirim method post
+
+	-Upload file
+	
+	-Menyimpan cookie
 
 - Grab konten website dengan php curl
 - Mengolah konten hasil grab
